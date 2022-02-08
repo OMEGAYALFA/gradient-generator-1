@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:700);
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: #30304a;
+}
+a:hover{
+    color: rgb(255,51,51,1);
+}
+body{
+    height: 100vh;
+    background: #30304a;
+}
+input{
+    border: 1px solid #30304a;
+}
+.boxt{
+    background-color: #ffffff;
+    /* width: 400px; */
+    padding: 50px 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.25);
+}
+.linear, .radial, .conic{
+    height: 300px !important;
+}
+.linear{
+    background: rgb(255,51,51,1);
+    background-image: linear-gradient(90deg, rgb(51,65,255,1) 0%, rgb(255,51,51,1) 100%);
+}
+.radial{
+    background: rgb(255,51,51,1);
+    background-image: radial-gradient(circle, rgb(51,65,255,1) 20%, rgb(255,51,51,1) 100%);
+}
+.conic{
+    background: rgb(255,51,51,1);
+    background-image: conic-gradient( rgb(51,65,255,1) 20%, rgb(255,51,51,1) 50%, rgb(51,204,255,1) 80%);
+}
+
+
+
+.colors{
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+}
+.inptcol{
+    background: white;
+    border: 2px solid #1F2667;
+    -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+    float: right;
+    width: 48px;
+    height: 48px;
+    background: rgba(255,255,255,0);
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.inpthex{
+    width: 92px;
+}
+.inptang{
+    width: 55px;
+    text-align: center;
+}
+.inpthex,.inptang{
+    
+    margin-top: 3px;
+    height: 42px;
+    padding: 0 8px;
+    border: 1px solid #bbbfc5;
+    border-radius: 6px;
+    -webkit-transition: all 175ms ease-out;
+    transition: all 175ms ease-out;
+    text-align: center;
+    font-family: "Dosis", Helvetica, Arial, sans-serif; 
+}
+
+input[type="color"]{
+    margin-top: 3px;
+    margin-left: 3px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 6px;
+}
+
+
+
+#resultcolor {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+.value{
+    font-family: "Dosis", Helvetica, Arial, sans-serif; 
+    font-size: 25px;
+}
+
+.output{
+    background-color: #d0d0d0;
+    border-radius:  0 0 10px 10px;
+}
+#code{
+    width: 100%;
+    resize: none;
+    color: #30304a;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+#copy{
+    font-size: 14px;
+    background-color: #4a6ee0;
+    color: #ffffff;
+    position: relative;
+    left: 85%;
+    bottom: 10px;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+}
